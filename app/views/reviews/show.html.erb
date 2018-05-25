@@ -1,0 +1,14 @@
+<html>
+<head>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<h1><%= @review.title %></h1>
+<h4><%= @review.address %></h4>
+<h2><%= @review.rating %></h4>
+<h5><%= @review.food %></h5>
+<h5><%= @review.price %></h5>
+<h3><%= @review.comment %></h3>
+<%= link_to "Back", reviews_path %>
+</body>
+</html>

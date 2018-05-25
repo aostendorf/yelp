@@ -1,0 +1,22 @@
+<h1>Edit A Review</h1>
+<%= form_for @review do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+
+  <%= f.label :food %>
+  <%= f.text_field :food %>
+
+  <%= f.label :price %>
+  <%= f.collection_select :price, Review::PRICES, :to_s, :to_s, :include_blank => true %>
+
+  <%= f.label :comment %>
+  <%= f.text_area :comment %>
+
+  <%= f.submit %>
+<% end %>
